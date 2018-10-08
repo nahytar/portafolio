@@ -1,7 +1,7 @@
 .imageOne {
   width: 100%;
   min-height: 500px;
-  background-image: url('./image/rawpixel-561415-unsplash.jpg');
+  background-image: url('./image/imagen_uno.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -11,7 +11,7 @@
 .imageTwo {
   width: 100%;
   min-height: 500px;
-  background-image: url('./image/rawpixel-668346-unsplash.jpg');
+  background-image: url('./image/imagen_dos.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
