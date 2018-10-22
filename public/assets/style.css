@@ -84,7 +84,6 @@
 }
 
 .card-text {
-  overflow: scroll;
   height: 5em;
 }
 
@@ -99,8 +98,48 @@
   justify-content: space-around;
 }
 
+.cardHover {
+  opacity: 0;
+  width: 18rem;
+  height: 60vh;
+  background-color: gray;
+  position: absolute;
+  transition-property: opacity;
+  transition-duration: 1s;
+}
+
+.cardHover:hover {
+  opacity: 0.5;
+}
+
+.cardHover i {
+  font-size: 64px;
+  opacity: 1;
+  color: black;
+  margin-top: 25vh;
+  left: -1rem;
+  transition-property: left;
+  transition-duration: 1s;
+  position: relative;
+}
+
+.cardHover:hover i {
+  left: 5rem;
+}
+
+.cardProjects {
+  width: 18rem;
+  height: 60vh;
+}
+
 @media only screen and (max-width: 768px) {
   [class*="description"] {
     font-size: 19px;
+  }
+}
+
+@media only screen and (max-height: 600px) {
+  .imageOne, .imageTwo, .imageEnd {
+    min-height: 300px;
   }
 }
