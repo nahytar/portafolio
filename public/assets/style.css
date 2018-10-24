@@ -28,30 +28,30 @@
   background-position: center;
 }
 
-#name {
+.name {
   font-family: 'Nunito Sans', sans-serif;
   color: black;
   text-align: center;
-  font-size: 36px;
-  margin-top: 4%;
+  font-size: 40px;
+  margin-top: 2%;
 }
 
 .skill {
-  height: 50px;
+  height: 30px;
   font-family: 'Roboto Condensed', sans-serif;
-  font-size: 33px;
+  font-size: 36px;
   color: rgb(92, 88, 88);
   text-align: center;
-  margin-top: 2%;
+  margin-bottom: 1%;
 }
 
 .description {
   height: 50px;
+  width: 70%;
   font-family: 'Roboto Condensed', sans-serif;
-  font-size: 30px;
+  font-size: 34px;
   color: rgb(92, 88, 88);
-  text-align: center;
-  margin-top: 2%;
+  text-align: justify;
 }
 
 .projectsTitle {
@@ -88,8 +88,10 @@
 }
 
 .imgHtml, .imgJs, .imgCss, .imgAngular, .imgGit, .imgNode {
-  width: 50%;
-  height: 20vh;
+  font-size: 100px;
+  text-align: center;
+  margin-top: 15px;
+  color: rgb(96, 96, 100);
 }
 
 .icns {
@@ -98,11 +100,21 @@
   justify-content: space-around;
 }
 
+.icns.showing i{
+  background-color: rgb(79, 177, 235);
+  color: white;
+  border-radius: 5px;
+  width: 100px;
+  height: 16vh;
+  margin: auto;
+  align-content: center;
+}
+
 .cardHover {
   opacity: 0;
   width: 18rem;
   height: 60vh;
-  background-color: gray;
+  background-color: rgb(97, 95, 95);
   position: absolute;
   transition-property: opacity;
   transition-duration: 1s;
@@ -133,13 +145,48 @@
 }
 
 @media only screen and (max-width: 768px) {
+  [class*="name"] {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  [class*="skill"] {
+    font-size: 21px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
   [class*="description"] {
     font-size: 19px;
   }
 }
 
 @media only screen and (max-height: 600px) {
-  .imageOne, .imageTwo, .imageEnd {
+  .imageOne {
     min-height: 300px;
+  }
+}
+
+@media only screen and (max-height: 600px) {
+  .imageTwo {
+    min-height: 300px;
+  }
+}
+
+@media only screen and (max-height: 600px) {
+  .imageEnd {
+    min-height: 300px;
+  }
+}
+
+@media only screen and (max-height: 600px) {
+  .cardArea {
+    margin-top: 20px;
+  }
+}
+@media only screen and (max-height: 600px) {
+  .icns.showing i {
+    height: 19vh;
   }
 }
